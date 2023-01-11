@@ -4,7 +4,7 @@
       <div>
         <img :src="cardData.img" :alt="cardData.name + 'image'" />
       </div>
-      <div>{{ data.health }}</div>
+      <div class="card-health">HP: {{ data.health }}</div>
     </div>
   </div>
 </template>
@@ -38,6 +38,9 @@ export default {
 <style scoped>
 .card {
   cursor: pointer;
+}
+.card-health {
+  text-align: center;
 }
 img {
   width: 230px;

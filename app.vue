@@ -37,9 +37,11 @@
 
 <script lang="ts">
 import axios from "axios";
-import { onMounted, reactive, ref } from "vue";
+import { ref } from "vue";
 import type { Ref } from "vue";
 import { Card } from "@/interfaces";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { flatten } from "lodash";
 
 export default {
